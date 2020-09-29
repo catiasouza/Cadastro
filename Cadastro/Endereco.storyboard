@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hrt-YH-APh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--EndVC-->
+        <scene sceneID="nrK-vU-Z9i">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Hrt-YH-APh" customClass="EndVC" customModule="Cadastro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nir-xz-Yra">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastro Endereco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAi-hG-984">
+                                <rect key="frame" x="30" y="73" width="354" height="39"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.64942744009999998" green="0.10923492899999999" blue="0.0108536672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Endereco:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVd-S6-5nv">
+                                <rect key="frame" x="30" y="167" width="354" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Mnw-eA-K4q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Num:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="733-tT-Sew">
+                                <rect key="frame" x="30" y="234" width="354" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="n3F-as-XxZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bairro:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kvZ-1i-lv5">
+                                <rect key="frame" x="30" y="304" width="354" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="gnc-vC-5KB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ff-WW-iYy">
+                                <rect key="frame" x="30" y="368" width="354" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="pO0-1U-QSS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ttm-vh-Zcz">
+                                <rect key="frame" x="30" y="432" width="354" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Eb0-q8-24Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YTp-xK-GJc"/>
+                        <color key="backgroundColor" white="1" alpha="0.56528253424657537" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wAi-hG-984" firstAttribute="top" secondItem="YTp-xK-GJc" secondAttribute="top" constant="29" id="0ZE-fc-hF7"/>
+                            <constraint firstItem="YTp-xK-GJc" firstAttribute="trailing" secondItem="ttm-vh-Zcz" secondAttribute="trailing" constant="30" id="3US-KU-iqV"/>
+                            <constraint firstItem="wVd-S6-5nv" firstAttribute="leading" secondItem="YTp-xK-GJc" secondAttribute="leading" constant="30" id="6uz-Bw-nHS"/>
+                            <constraint firstItem="ttm-vh-Zcz" firstAttribute="top" secondItem="7Ff-WW-iYy" secondAttribute="bottom" constant="30" id="CAe-Ou-6G3"/>
+                            <constraint firstItem="7Ff-WW-iYy" firstAttribute="leading" secondItem="YTp-xK-GJc" secondAttribute="leading" constant="30" id="Cps-Gn-Tzh"/>
+                            <constraint firstItem="733-tT-Sew" firstAttribute="leading" secondItem="YTp-xK-GJc" secondAttribute="leading" constant="30" id="DaC-HU-aMc"/>
+                            <constraint firstItem="YTp-xK-GJc" firstAttribute="trailing" secondItem="kvZ-1i-lv5" secondAttribute="trailing" constant="30" id="EZT-UL-tHA"/>
+                            <constraint firstItem="YTp-xK-GJc" firstAttribute="trailing" secondItem="733-tT-Sew" secondAttribute="trailing" constant="30" id="Jp6-Xb-hCh"/>
+                            <constraint firstItem="YTp-xK-GJc" firstAttribute="trailing" secondItem="7Ff-WW-iYy" secondAttribute="trailing" constant="30" id="RFZ-6t-mj0"/>
+                            <constraint firstItem="kvZ-1i-lv5" firstAttribute="leading" secondItem="YTp-xK-GJc" secondAttribute="leading" constant="30" id="SH3-Fw-Z4z"/>
+                            <constraint firstItem="wAi-hG-984" firstAttribute="leading" secondItem="YTp-xK-GJc" secondAttribute="leading" constant="30" id="SMt-A6-4Ft"/>
+                            <constraint firstItem="wVd-S6-5nv" firstAttribute="top" secondItem="wAi-hG-984" secondAttribute="bottom" constant="55" id="ajC-G9-1os"/>
+                            <constraint firstItem="YTp-xK-GJc" firstAttribute="trailing" secondItem="wAi-hG-984" secondAttribute="trailing" constant="30" id="dso-Sa-kcc"/>
+                            <constraint firstItem="kvZ-1i-lv5" firstAttribute="top" secondItem="733-tT-Sew" secondAttribute="bottom" constant="36" id="euV-kD-GV6"/>
+                            <constraint firstItem="YTp-xK-GJc" firstAttribute="trailing" secondItem="wVd-S6-5nv" secondAttribute="trailing" constant="30" id="lK0-UR-8wn"/>
+                            <constraint firstItem="7Ff-WW-iYy" firstAttribute="top" secondItem="kvZ-1i-lv5" secondAttribute="bottom" constant="30" id="pr6-hh-h5n"/>
+                            <constraint firstItem="733-tT-Sew" firstAttribute="top" secondItem="wVd-S6-5nv" secondAttribute="bottom" constant="33" id="uD1-Kh-xVY"/>
+                            <constraint firstItem="ttm-vh-Zcz" firstAttribute="leading" secondItem="YTp-xK-GJc" secondAttribute="leading" constant="30" id="v24-ns-pn0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mgg-NP-WRW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192.75362318840581" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>
