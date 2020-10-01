@@ -9,15 +9,17 @@
 /* Begin PBXBuildFile section */
 		54009A012522A1BA0031BD2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009A002522A1BA0031BD2D /* AppDelegate.swift */; };
 		54009A032522A1BA0031BD2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009A022522A1BA0031BD2D /* SceneDelegate.swift */; };
-		54009A052522A1BA0031BD2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009A042522A1BA0031BD2D /* ViewController.swift */; };
 		54009A082522A1BA0031BD2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54009A062522A1BA0031BD2D /* Main.storyboard */; };
 		54009A0A2522A1BF0031BD2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54009A092522A1BF0031BD2D /* Assets.xcassets */; };
 		54009A0D2522A1BF0031BD2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54009A0B2522A1BF0031BD2D /* LaunchScreen.storyboard */; };
 		54009A182522A1C00031BD2D /* CadastroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009A172522A1C00031BD2D /* CadastroTests.swift */; };
 		54009A232522A1C00031BD2D /* CadastroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009A222522A1C00031BD2D /* CadastroUITests.swift */; };
-		54009A342522A32F0031BD2D /* EndVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009A332522A32F0031BD2D /* EndVC.swift */; };
-		54009A3C2522A35E0031BD2D /* Endereco.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54009A3B2522A35E0031BD2D /* Endereco.storyboard */; };
-		54B748272522B9BB0031109C /* CadastroEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B748262522B9BB0031109C /* CadastroEndViewController.swift */; };
+		54009A342522A32F0031BD2D /* CadastroEndereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54009A332522A32F0031BD2D /* CadastroEndereco.swift */; };
+		5474F73825258A560080FB04 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5474F73725258A560080FB04 /* DetailsVC.swift */; };
+		5474F73D2525911D0080FB04 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5474F73C2525911D0080FB04 /* Detail.storyboard */; };
+		54B748272522B9BB0031109C /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B748262522B9BB0031109C /* FirstVC.swift */; };
+		54B7485725253F290031109C /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B7485625253F290031109C /* Usuario.swift */; };
+		54B7485D2525418B0031109C /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B7485C2525418B0031109C /* Endereco.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,6 @@
 		540099FD2522A1BA0031BD2D /* Cadastro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cadastro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54009A002522A1BA0031BD2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54009A022522A1BA0031BD2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		54009A042522A1BA0031BD2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54009A072522A1BA0031BD2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54009A092522A1BF0031BD2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54009A0C2522A1BF0031BD2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,9 +53,12 @@
 		54009A1E2522A1C00031BD2D /* CadastroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CadastroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54009A222522A1C00031BD2D /* CadastroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroUITests.swift; sourceTree = "<group>"; };
 		54009A242522A1C00031BD2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54009A332522A32F0031BD2D /* EndVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndVC.swift; sourceTree = "<group>"; };
-		54009A3B2522A35E0031BD2D /* Endereco.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Endereco.storyboard; sourceTree = "<group>"; };
-		54B748262522B9BB0031109C /* CadastroEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroEndViewController.swift; sourceTree = "<group>"; };
+		54009A332522A32F0031BD2D /* CadastroEndereco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroEndereco.swift; sourceTree = "<group>"; };
+		5474F73725258A560080FB04 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		5474F73C2525911D0080FB04 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		54B748262522B9BB0031109C /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		54B7485625253F290031109C /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		54B7485C2525418B0031109C /* Endereco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +109,12 @@
 		540099FF2522A1BA0031BD2D /* Cadastro */ = {
 			isa = PBXGroup;
 			children = (
+				54B7485B25253F300031109C /* Views */,
+				54B7485525253F0D0031109C /* Model */,
 				54009A002522A1BA0031BD2D /* AppDelegate.swift */,
 				54009A022522A1BA0031BD2D /* SceneDelegate.swift */,
-				54009A042522A1BA0031BD2D /* ViewController.swift */,
-				54B748262522B9BB0031109C /* CadastroEndViewController.swift */,
-				54009A332522A32F0031BD2D /* EndVC.swift */,
+				5474F73C2525911D0080FB04 /* Detail.storyboard */,
 				54009A062522A1BA0031BD2D /* Main.storyboard */,
-				54009A3B2522A35E0031BD2D /* Endereco.storyboard */,
 				54009A092522A1BF0031BD2D /* Assets.xcassets */,
 				54009A0B2522A1BF0031BD2D /* LaunchScreen.storyboard */,
 				54009A0E2522A1BF0031BD2D /* Info.plist */,
@@ -135,6 +138,25 @@
 				54009A242522A1C00031BD2D /* Info.plist */,
 			);
 			path = CadastroUITests;
+			sourceTree = "<group>";
+		};
+		54B7485525253F0D0031109C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54B7485625253F290031109C /* Usuario.swift */,
+				54B7485C2525418B0031109C /* Endereco.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54B7485B25253F300031109C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54B748262522B9BB0031109C /* FirstVC.swift */,
+				54009A332522A32F0031BD2D /* CadastroEndereco.swift */,
+				5474F73725258A560080FB04 /* DetailsVC.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +265,7 @@
 				54009A0D2522A1BF0031BD2D /* LaunchScreen.storyboard in Resources */,
 				54009A0A2522A1BF0031BD2D /* Assets.xcassets in Resources */,
 				54009A082522A1BA0031BD2D /* Main.storyboard in Resources */,
-				54009A3C2522A35E0031BD2D /* Endereco.storyboard in Resources */,
+				5474F73D2525911D0080FB04 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54009A052522A1BA0031BD2D /* ViewController.swift in Sources */,
 				54009A012522A1BA0031BD2D /* AppDelegate.swift in Sources */,
-				54009A342522A32F0031BD2D /* EndVC.swift in Sources */,
-				54B748272522B9BB0031109C /* CadastroEndViewController.swift in Sources */,
+				54B7485725253F290031109C /* Usuario.swift in Sources */,
+				54009A342522A32F0031BD2D /* CadastroEndereco.swift in Sources */,
+				54B7485D2525418B0031109C /* Endereco.swift in Sources */,
+				5474F73825258A560080FB04 /* DetailsVC.swift in Sources */,
+				54B748272522B9BB0031109C /* FirstVC.swift in Sources */,
 				54009A032522A1BA0031BD2D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
