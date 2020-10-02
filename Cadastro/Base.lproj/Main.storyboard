@@ -87,11 +87,16 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bairro" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oTu-qs-1zE">
-                                                <rect key="frame" x="0.0" y="117" width="354" height="63"/>
+                                                <rect key="frame" x="0.0" y="117" width="354" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="mdQ-5N-Qcr"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GFo-kZ-g2r">
+                                                <rect key="frame" x="0.0" y="156" width="354" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -172,6 +177,7 @@
                         <outlet property="emailTextField" destination="RHC-fm-eZz" id="y5G-Iw-iZL"/>
                         <outlet property="enderecoButton" destination="ugn-Qj-Ryr" id="wKX-Z1-jvN"/>
                         <outlet property="enderecoView" destination="SBo-j0-G39" id="9LG-c9-hhc"/>
+                        <outlet property="estadoTextField" destination="GFo-kZ-g2r" id="9qT-B1-3NR"/>
                         <outlet property="nomeTextFiled" destination="PNJ-zk-yWG" id="NtE-Fl-Hdn"/>
                         <outlet property="ruaTextField" destination="nt0-gy-RLO" id="B6E-Pp-zAd"/>
                         <segue destination="WWe-0n-yHC" kind="presentation" identifier="DetailVC" id="pzT-b3-ZUs"/>
@@ -260,6 +266,20 @@
                                     <action selector="clicouVoltou:" destination="Qg1-Wp-All" eventType="touchUpInside" id="zhu-sc-agp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXJ-he-2a5">
+                                <rect key="frame" x="30" y="376" width="354" height="40"/>
+                                <color key="backgroundColor" red="0.64942744009999998" green="0.10923492899999999" blue="0.0108536672" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WVh-Sd-WQY"/>
+                                </constraints>
+                                <state key="normal" title="Cadastrar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clicouCadastrarEndereco:" destination="Qg1-Wp-All" eventType="touchUpInside" id="out-9U-9cP"/>
+                                    <action selector="tappedCadastrarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rYp-E1-S5v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fh9-k7-hFO"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -267,10 +287,13 @@
                             <constraint firstItem="zDu-23-DYe" firstAttribute="leading" secondItem="fh9-k7-hFO" secondAttribute="leading" constant="10" id="0yo-tf-VcN"/>
                             <constraint firstItem="fh9-k7-hFO" firstAttribute="trailing" secondItem="zDu-23-DYe" secondAttribute="trailing" constant="10" id="152-tS-1yt"/>
                             <constraint firstItem="fh9-k7-hFO" firstAttribute="trailing" secondItem="dXQ-Nh-YFd" secondAttribute="trailing" constant="10" id="DS9-R7-lNt"/>
+                            <constraint firstItem="zXJ-he-2a5" firstAttribute="top" secondItem="dXQ-Nh-YFd" secondAttribute="bottom" constant="30" id="Hxc-Rk-1ww"/>
                             <constraint firstItem="dXQ-Nh-YFd" firstAttribute="top" secondItem="gf2-LX-CVm" secondAttribute="bottom" constant="29" id="LDE-fK-vfc"/>
                             <constraint firstItem="dXQ-Nh-YFd" firstAttribute="leading" secondItem="fh9-k7-hFO" secondAttribute="leading" constant="10" id="VoH-1i-nUL"/>
                             <constraint firstItem="fh9-k7-hFO" firstAttribute="trailing" secondItem="gf2-LX-CVm" secondAttribute="trailing" constant="30" id="W01-Vr-XwE"/>
                             <constraint firstItem="dXQ-Nh-YFd" firstAttribute="top" secondItem="zDu-23-DYe" secondAttribute="bottom" constant="13" id="WVW-Ik-v7E"/>
+                            <constraint firstItem="zXJ-he-2a5" firstAttribute="leading" secondItem="xSm-FL-UZU" secondAttribute="leading" constant="30" id="Y0w-kh-MlJ"/>
+                            <constraint firstItem="fh9-k7-hFO" firstAttribute="trailing" secondItem="zXJ-he-2a5" secondAttribute="trailing" constant="30" id="nGh-gM-URu"/>
                             <constraint firstItem="gf2-LX-CVm" firstAttribute="top" secondItem="xSm-FL-UZU" secondAttribute="top" constant="29" id="oNQ-od-SLx"/>
                             <constraint firstItem="zDu-23-DYe" firstAttribute="top" secondItem="fh9-k7-hFO" secondAttribute="top" constant="10" id="rlk-G8-AIc"/>
                         </constraints>
@@ -279,6 +302,7 @@
                         <outlet property="bairroTextField" destination="GUk-tb-vyW" id="n76-6y-nrB"/>
                         <outlet property="cidadeTextField" destination="51g-rN-qwt" id="ptL-5K-474"/>
                         <outlet property="complementoTextField" destination="bBI-b7-thf" id="rBE-Dp-RZu"/>
+                        <outlet property="estadoTextField" destination="gfh-8m-ind" id="3vL-Sf-xSk"/>
                         <outlet property="ruaTextField" destination="r2U-zz-S4Y" id="EAu-yU-djN"/>
                     </connections>
                 </viewController>
